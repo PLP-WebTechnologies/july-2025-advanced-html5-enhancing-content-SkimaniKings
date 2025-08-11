@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+        width: 70%;
+        margin: auto;
+      }
+      h1,
+      h2 {
+        color: #2c3e50;
+      }
+      ul,
+      ol {
+        margin-left: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #666;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      form {
+        background: #fff;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        max-width: 500px;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        width: auto;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        width: auto;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enhancing HTML5 Content & Mastering Forms</h1>
+
+    <h2>Unordered List_Shopping List</h2>
+    <ul>
+      <li>Bread</li>
+      <li>Milk</li>
+      <li>Eggs</li>
+      <li>Rice</li>
+      <li>Vegetables</li>
+    </ul>
+
+    <h2>Ordered List_My Favorite Programming Languages</h2>
+    <ol>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>PHP</li>
+    </ol>
+
+    <h2>Programming Languages Table</h2>
+    <table>
+      <tr>
+        <th>Language</th>
+        <th>Inventor/Creator</th>
+        <th>Best For</th>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Guido van Rossum</td>
+        <td>Backend</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Brendan Eich</td>
+        <td>Frontend & Backend</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>James Gosling</td>
+        <td>Backend</td>
+      </tr>
+      <tr>
+        <td>C++</td>
+        <td>Bjarne Stroustrup</td>
+        <td>Backend</td>
+      </tr>
+      <tr>
+        <td>PHP</td>
+        <td>Rasmus Lerdorf</td>
+        <td>Backend</td>
+      </tr>
+    </table>
+
+    <h2>Best Places to Visit in the World</h2>
+    <p>
+      Traveling opens up new perspectives and unforgettable experiences. Here’s
+      a video showcasing some of the most beautiful destinations in the world
+      you should visit at least once.
+    </p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/eLPVDaaQybY?si=uAlR1LiyOiIBwY6T"
+      title="Best Places to Visit"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+
+    <h2>Feedback Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <label for="fullname">Full Name:</label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        autocomplete="email"
+        required
+      />
+
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number"
+        autocomplete="tel"
+      />
+
+      <label for="rating">Rate Your Experience:</label>
+      <input
+        type="number"
+        id="rating"
+        name="rating"
+        min="1"
+        max="5"
+        placeholder="1-5"
+        required
+      />
+
+      <label>Preferred Method of Contact:</label><br />
+      <input
+        type="radio"
+        id="contact-email"
+        name="contact-method"
+        value="email"
+        required
+      />
+      <label for="contact-email">Email</label>
+      <input
+        type="radio"
+        id="contact-phone"
+        name="contact-method"
+        value="phone"
+      />
+      <label for="contact-phone">Phone</label><br /><br />
+
+      <label for="message">Your Feedback:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Write your feedback here..."
+        required
+      ></textarea>
+
+      <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+      <label for="newsletter">Subscribe to our newsletter</label><br /><br />
+
+      <label for="submitted-date">Date of Submission:</label>
+      <input
+        type="text"
+        id="submitted-date"
+        name="submitted-date"
+        value="2025-08-11"
+        readonly
+      />
+
+      <input type="submit" value="Submit Feedback" />
+      <input type="reset" value="Reset Form" />
+    </form>
+  </body>
+</html>
